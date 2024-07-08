@@ -67,7 +67,7 @@ const Dashboard = () => {
             <TaskTracker />
           </div>
           <div className="section middle">
-            <Header title="lofi-env" />
+            <Header title="My Space" />
             <div className="slideshow">
               <ImageContainer
                 onLoad={() => {
