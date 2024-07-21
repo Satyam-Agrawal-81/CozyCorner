@@ -63,7 +63,7 @@ const Dashboard = () => {
         <Nav />
         <StyledApp>
           <div className="section first">
-            <Timer />
+            <Timer />cd
             <TaskTracker />
           </div>
           <div className="section middle">
