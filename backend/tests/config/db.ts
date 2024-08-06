@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import { MongoMemoryServer } from "mongodb-memory-server";
 
 let connection;
-let mongoServer: MongoMemoryServer;
+let mongoServer: MongoMemoryServer; //mongo memory server for testing purpose
 
 const connect = async () => {
   mongoServer = await MongoMemoryServer.create();
