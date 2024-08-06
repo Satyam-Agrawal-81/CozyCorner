@@ -22,7 +22,7 @@ export const verifyToken = asyncHandler(
         if (process.env.JWT_SECRET) {
           decoded = jwt.verify(token, process.env.JWT_SECRET) as JwtPayload;
         } else {
-          throw new Error("JWT_SECRET not recognised");
+          throw new Error("JWT_SECRET Not Recognised");
         }
 
         // Get user from the token
@@ -33,13 +33,13 @@ export const verifyToken = asyncHandler(
         next();
       } catch (err) {
         res.status(401);
-        throw new Error("Not authorized");
+        throw new Error("Not Authorized");
       }
     }
     // If no token is found, throw an error
     if (!token) {
       res.status(401);
-      throw new Error("Not authorized. no token");
+      throw new Error("Not Authorized - No token");
     }
   }
 );
