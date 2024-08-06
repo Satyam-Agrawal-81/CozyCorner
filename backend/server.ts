@@ -66,7 +66,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Custom error handler middleware ()
 app.use(errorHandler);
-
+//testing environment
 if (process.env.NODE_ENV !== "test") {
   app.listen(port, () => {
     console.log(`Server started on port: ${port}`);
